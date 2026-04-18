@@ -1,4 +1,3 @@
-Here is a more concise, conversational rewrite of the README. It’s structured to read like a fellow hardware developer walking you through their repository.
 
 **I2C Cores & Controllers**
 This repo houses a collection of I2C cores I've built, mostly utilizing Wishbone and AXI-Lite interfaces. Whether you just need a basic master/slave setup or a more advanced, scriptable controller for telemetry, you'll find it here.
