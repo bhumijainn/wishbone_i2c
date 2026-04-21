@@ -1,4 +1,4 @@
-Here is a rewritten, more conversational version of the README. I've grouped the commands logically to make it much quicker to read and easier to digest.
+
 
 **I2C CPU Assembler**
 Simply put, this tool takes your assembly scripts (like testfil.s) and compiles them into a binary file that the I2CCPU can understand and execute.
