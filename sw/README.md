@@ -1,11 +1,13 @@
 
 
 **I2C CPU Assembler**
+
 Simply put, this tool takes your assembly scripts (like testfil.s) and compiles them into a binary file that the I2CCPU can understand and execute.
 
 Here is a quick breakdown of the commands you can use in your scripts:
 
 **I2C Commands**
+
 These directly control the underlying I2C hardware:
 
 START / STOP: Triggers the standard I2C start and stop conditions.
@@ -23,6 +25,7 @@ RXN: Receive but don't ACK (NACK).
 RXLK / RXLN: Same as above (ACK or NACK), but these also raise the AXI TLAST signal to tell the system it's the last byte.
 
 **Control & Logic Commands**
+
 These are handled by the instruction decoder to manage the flow of your program:
 
 NOOP: Do nothing, but burn one clock cycle.
@@ -40,9 +43,11 @@ CHANNEL: Sets the AXI TID field so you can route your output to different target
 (Note: Don't worry about keeping track of memory addresses. Jump and abort locations are automatically handled based on where you place the instructions.)
 
 **Variables**
+
 Need a quick constant? You can easily define variables (e.g., A=0xff) and plug them into your SEND or CHANNEL commands later to keep your code clean.
 
 **Quick Start & Testing**
+
 You can test the assembler and check your work right from the command line:
 
 View Help Menu: i2casm -h
